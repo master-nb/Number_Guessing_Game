@@ -1,0 +1,17 @@
+import random
+print('You can chose any number in range(1-100)')
+while True:
+    num=random.randrange(1,100)
+    user=int(input('Enter your number:'))
+
+    if num>user:
+        print('Your number is too low.')
+        print(f'The correct number is {num}')
+    elif num<user:
+        print('Your number is too high.')
+        print(f'The correct number is {num}')
+    elif num==user:
+        print('Your are absolutely right. You win the game.')
+        print(f'The correct number is {num}')
+    else:
+        print('Invalid Number')
